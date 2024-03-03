@@ -1,0 +1,340 @@
+/* Start Variables */
+
+:root {
+    --main-color: #FEB23A;
+    --sec-color:rgb(34, 179, 173);
+}
+
+/* End Variables */
+/* Start Global Rulse*/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Asap Condensed', sans-serif;
+    font-weight: bold;
+}
+.shop{
+    position: absolute;
+    top: 19px;
+    right: 127px;
+    color: var(--sec-color);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15pxx;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Global Rulse*/
+
+/* Start component */
+
+.main-head {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 45px;
+    color: var(--main-color);
+}
+/* End component */
+
+/* Stat Header  */
+.logo{
+    width: 150px;
+    margin-left: 105px;
+   
+}
+
+header {
+    position: relative;
+    left: 0;
+    width:  100%;
+    z-index: 2;
+    box-shadow: 0px 1px 3px black;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    min-height: 160px;
+}
+header .container form{
+    position: absolute;
+    top: 14px;
+    right: 160px;
+}
+header .container form input
+{
+    padding: 9px 0px 9px 30px;
+    width: 245px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 1px 1px var(--main-color);
+}
+header .container form input:hover{
+    border: 1px solid #4169e1;
+    box-shadow: none;
+}
+header .container form span{
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    font-size: 20px;
+    color: #4169e1;
+}
+header .container form:hover span{
+    color: black;
+}
+header  nav{
+    flex: 1;
+    display: flex;
+    align-items: center; 
+}
+
+header .container nav ul {
+     display: flex;
+    margin-left: 118px;
+    margin-top: 85px; 
+}
+
+header .container nav ul li a{
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20px 20px ;
+    transition: 0.3s;
+    color: var(--sec-color);
+}
+header .container nav ul li a:hover
+{
+    color: var(--main-color);
+    border-top:  solid var(--main-color);
+    border-width: 5px;
+    cursor: pointer;
+}
+.log {
+    color: var(--sec-color);
+    margin-top: 77px;
+    margin-right: 229px;
+}
+/* End Header  */
+
+/* start title  */
+#title{
+    color: #FEB23A;
+    font-family: 'patrick hand','Asap Condensed', 'sans-serif';
+    font-size: 65px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    padding-top: 22px; 
+}
+/* end title  */
+
+/* start image  */
+.books{
+    padding-left: 330px;
+    padding-top: 32px ;
+}
+/* end image  */
+
+/* start blue square  */
+#square{
+    position: absolute;
+    width: 1197px;;
+    height: 625px;
+    background-color: #77E8CA;
+    top: 335px;
+    left: 68px;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* end blue square  */
+
+
+
+/* start right square  */
+#rsquare{
+    position: absolute;
+    width: 375px; ;
+    height: 375px; ;
+    background-color:white ;
+    top: 646px; ;
+    left: 797px; ;
+    border: 20px solid hsl(37, 99%, 61%,.6);
+    background-clip: padding-box;   
+}
+
+#rsquare p{
+    font-family: 'patrick hand','Asap Condensed', 'sans-serif';
+    color:rgb(34, 179, 173) ;
+    padding-top:30px;
+    padding-left: 18px;
+    word-spacing: 3px;
+}
+#rsquare pre{
+    font-family: 'patrick hand','Asap Condensed', 'sans-serif';
+    color: #feb33a;
+    text-align: left;
+    padding-top: 9px;
+    padding-left: 20px;
+    word-spacing: 3px;
+
+
+}
+/* end right square  */
+
+
+
+
+/* start left square  */
+#lsquare{
+    position: absolute;
+    width: 375px; ;
+    height: 375px; ;
+    background-color:white ;
+    top: 646px; ;
+    left: 190px; ;
+    border: 20px solid hsl(37, 99%, 61%,.6);
+    background-clip: padding-box;
+}
+#lsquare p{
+    font-family: 'patrick hand','Asap Condensed', 'sans-serif';
+    color:rgb(34, 179, 173) ;
+    padding-top:30px;
+    padding-left: 18px;
+    text-align: left;
+    display: inline;
+    word-spacing: 3px;
+
+
+}
+
+#lsquare pre{
+    font-family: 'patrick hand','Asap Condensed', 'sans-serif';
+    color: #feb33a;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    word-spacing: 3px;
+    line-height: 25px;
+
+}
+/* end left square  */
+/* Start Boutton */
+.st{
+    position: sticky;
+}
+.bt {
+    color: #ffff;
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 10px 43px;
+    border-radius: 16px;
+    position: absolute;
+    right: 25px;
+    top: 140px;
+    display: flex;
+}
+.bt a{
+    text-decoration: none;
+    color: #ffff;
+    margin-left: 9px;
+}
+/* End Boutton */
+/* Start footer  */
+footer{
+    background-color: var(--sec-color);
+    width: 100%;
+    height: 155px;
+    margin-top: 50px;
+}
+footer .l {
+    position: absolute;
+    left: 325px;
+}
+footer .l a{
+    color: #ffff;
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+    font-weight: normal;
+
+}
+
+footer .l span
+{
+    color: #ffff;
+    font-size: 12px;
+    font-weight: normal;
+    word-spacing: 2px;
+    margin: 0px -48px 0px;
+    position: absolute;
+    top: 105px;
+}
+footer .icon span
+{
+    color: #ffff;
+    font-weight: normal;
+    position: absolute;
+    right: 330px;
+    margin-top: 18px;
+}
+footer .icons{
+    position: absolute;
+    right: 299px;
+    margin-top: 51px;
+}
+footer .icons img{
+    width: 35px;
+    margin: 0px -10px;
+}
+footer .icon a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: normal;
+    position: absolute;
+    right: 297px;
+    margin-top: 103px;
+    font-size: 12px;
+}
+/* End footer  */
